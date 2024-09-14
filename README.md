@@ -5,7 +5,8 @@ Projeto desenvolvido para a disciplina de Desenvolvimento FrontEnd na faculdade 
 
 [+ Ver Projeto](https://luisatriers.github.io/siteViagens/)
 
-
+<img src="assets/info/header.png" width="">
+<img src="assets/info/main.png" width="">
 
 ## Stacks
 

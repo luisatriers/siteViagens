@@ -1,0 +1,36 @@
+.card {
+    margin: 0.8em;
+    padding: 0;
+    width:18rem;
+}
+
+.card-text {
+    text-align: justify;
+    text-indent: 1rem;
+}
+
+.card img {
+    height: 200px;
+}
+
+#pacotes .btn {
+    border-radius: 0;
+}
+
+#carouselExampleInterval img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+#titulo, #subtitulo {
+    text-shadow: 2px 2px 4px #000;
+}
+
+#subtitulo {
+    background-color: #0d6efd70;
+}
+
+#imagem-social img {
+    width: 200px;
+}

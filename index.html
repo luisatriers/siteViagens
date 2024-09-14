@@ -1,0 +1,199 @@
+<!-- Atividade Prática
+1. Comece criando um site básico no seu editor de código. O site deve ter pelo menos uma página (index.html) e utilizar HTML, CSS e Bootstrap. Você é livre para definir o conteúdo e estilo do site.
+2. Após criar o site, crie um novo repositório no GitHub. Nomeie o repositório de acordo com o propósito do seu site (por exemplo, “meu-portfolio”).
+3. No VSCode, adicione o repositório que você acabou de criar como o repositório remoto do seu projeto usando o comando git remote add origin [URL do seu repositório].
+4. Faça o push do seu projeto para o GitHub usando o comando git push origin main.
+5. Verifique se o seu projeto aparece no repositório no GitHub.
+6. Ative o GitHub Pages para o seu repositório. Vá para Settings > Pages > Source, escolha a branch “main” e clique em “Save”.
+7. Aguarde alguns minutos para o GitHub publicar o seu site. Após a publicação, copie o URL fornecido pelo GitHub e verifique se o site está funcionando corretamente.
+8. Compartilhe o URL do seu site com seus colegas de classe. -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/i/favicon.ico">
+    <title>Mundos&Aventuras</title>
+</head>
+<body class="m-0 text-center">
+    <header>
+        <div id="menu" class="container-fluid bg-warning p-2">
+            <nav>
+                <h5>Menu</h5>
+            </nav>
+        </div>
+        <div id="titulo" class="container-fluid p-0 position-absolute top-50 start-50 translate-middle text-white z-1">
+            <h1 class="display-1 fw-medium">Mundos & Aventuras</h1>
+            <div id="subtitulo" class="p-2">
+                <h4 class="display-6 text-warning fw-medium">Sua próxima aventura começa aqui</h4>
+            </div>
+        </div>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="assets/img/america-do-sul.png" class="d-block w-100 vh-100" alt="Foto de Machu Picchu">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="assets/img/asia.png" class="d-block w-100 vh-100" alt="Foto da Tailândia">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="assets/img/caribe.png" class="d-block w-100 vh-100" alt="Foto de praia do Caribe">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="assets/img/europa.png" class="d-block w-100 vh-100" alt="Foto do Coliseu">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="assets/img/maldivas.png" class="d-block w-100 vh-100" alt="Foto de chalés nas Maldivas">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="assets/img/safari.png" class="d-block w-100 vh-100" alt="Foto de safári na África do Sul">
+              </div>
+            </div>
+          </div>
+    </header>
+    <main class="container-fluid p-0 bg-light">
+        <section id="pacotes" class="d-flex row justify-content-center">
+            <h2 class="p-4 m-0 mt-1 text-primary fw-bold bg-warning">Nossos Pacotes</h2>
+            <div id="cardsPacotes" class="container-fluid d-flex row justify-content-center bg-light">
+                <div class="card">
+                    <img src="assets/img/caribe.png" class="card-img-top" alt="...">
+                    <div class="card-header bg-info-subtle">
+                        <h5 class="card-title text-primary">Caribe Encantador</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Punta Cana, República Dominicana</h6>
+                    </div>
+                    <div class="card-body align-content-center py-1">
+                        <p class="card-text">Relaxe nas praias paradisíacas de Punta Cana, com águas cristalinas e areia
+                            branca. Desfrute de resorts all inclusive, atividades aquáticas e explore a rica cultura
+                            dominicana.</p>
+                    </div>
+                    <div id=pctValor class="bg-warning p-2">
+                        <p class="m-0">a partir de</p>
+                        <h2 class=""">R$5.000,00</h2>
+                    </div>
+                    <a href=" #" class="btn btn-primary">Reservar</a>
+                            <div class="card-footer">
+                                <p class="m-0">Em até 24x</p>
+                            </div>
+                </div>
+                <div class="card">
+                    <img src="assets/img/europa.png" class="card-img-top" alt="...">
+                    <div class="card-header bg-info-subtle">
+                        <h5 class="card-title text-primary">Europa Clássica</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Roma, Paris, Barcelona</h6>
+                    </div>
+                    <div class="card-body align-content-center py-1">
+                        <p class="card-text">Uma viagem inesquecível pelas principais cidades europeias. Visite monumentos históricos, museus renomados e saboreie a deliciosa gastronomia local.</p>
+                    </div>
+                    <div id=pctValor class="bg-warning p-2">
+                        <p class="m-0">a partir de</p>
+                        <h2 class=""">R$10.000,00</h2>
+                    </div>
+                    <a href=" #" class="btn btn-primary">Reservar</a>
+                            <div class="card-footer">
+                                <p class="m-0">Em até 24x</p>
+                            </div>
+                </div>
+                <div class="card">
+                    <img src="assets/img/asia.png" class="card-img-top" alt="...">
+                    <div class="card-header bg-info-subtle">
+                        <h5 class="card-title text-primary">Ásia Mística</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Tailândia, Vietnã, Camboja</h6>
+                    </div>
+                    <div class="card-body align-content-center py-1">
+                        <p class="card-text">Mergulhe na cultura milenar da Ásia. Explore templos antigos, florestas exuberantes e saboreie a culinária exótica.</p>
+                    </div>
+                    <div id=pctValor class="bg-warning p-2">
+                        <p class="m-0">a partir de</p>
+                        <h2 class=""">R$8.000,00</h2>
+                    </div>
+                    <a href=" #" class="btn btn-primary">Reservar</a>
+                            <div class="card-footer">
+                                <p class="m-0">Em até 24x</p>
+                            </div>
+                </div>
+                <div class="card">
+                    <img src="assets/img/america-do-sul.png" class="card-img-top" alt="...">
+                    <div class="card-header bg-info-subtle">
+                        <h5 class="card-title text-primary">América do Sul</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Machu Picchu, Patagônia, Amazônia</h6>
+                    </div>
+                    <div class="card-body align-content-center py-1">
+                        <p class="card-text">Uma expedição pelas maravilhas da América do Sul. Conheça a história dos
+                            Incas em Machu Picchu, explore a Patagônia e navegue pelos rios da Amazônia.</p>
+                    </div>
+                    <div id=pctValor class="bg-warning p-2">
+                        <p class="m-0">a partir de</p>
+                        <h2 class=""">R$7.000,00</h2>
+                    </div>
+                    <a href=" #" class="btn btn-primary">Reservar</a>
+                            <div class="card-footer">
+                                <p class="m-0">Em até 24x</p>
+                            </div>
+                </div>
+                <div class="card">
+                    <img src="assets/img/maldivas.png" class="card-img-top" alt="...">
+                    <div class="card-header bg-info-subtle">
+                        <h5 class="card-title text-primary">Romance nas Maldivas</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Ilhas Maldivas</h6>
+                    </div>
+                    <div class="card-body align-content-center py-1">
+                        <p class="card-text">Uma viagem romântica para o paraíso. Desfrute de bangalôs sobre a água, mergulhe em águas cristalinas e relaxe em spas de luxo.</p>
+                    </div>
+                    <div id=pctValor class="bg-warning p-2">
+                        <p class="m-0">a partir de</p>
+                        <h2 class=""">R$12.000,00</h2>
+                    </div>
+                    <a href=" #" class="btn btn-primary">Reservar</a>
+                            <div class="card-footer">
+                                <p class="m-0">Em até 24x</p>
+                            </div>
+                </div>
+                <div class="card">
+                    <img src="assets/img/safari.png" class="card-img-top" alt="...">
+                    <div class="card-header bg-info-subtle">
+                        <h5 class="card-title text-primary">Safári Africano</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">África do Sul</h6>
+                    </div>
+                    <div class="card-body align-content-center py-1">
+                        <p class="card-text">Uma aventura inesquecível na savana africana. Observe animais selvagens em seu habitat natural, faça safáris e vivencie a cultura local.</p>
+                    </div>
+                    <div id=pctValor class="bg-warning p-2">
+                        <p class="m-0">a partir de</p>
+                        <h2 class=""">R$15.000,00</h2>
+                    </div>
+                    <a href=" #" class="btn btn-primary">Reservar</a>
+                            <div class="card-footer">
+                                <p class="m-0">Em até 24x</p>
+                            </div>
+                </div>
+            </div>
+        </section>
+        <section id="orcamento" class="justify-content-center">
+            <h2 class="p-4 m-0 mt-1 text-primary fw-bold bg-warning">Orçamento</h2>
+            <div>
+
+            </div>
+        </section>
+        <section id="contato" class="justify-content-center">
+            <h2 class="p-4 m-0 mt-1 text-primary fw-bold bg-warning">Contato</h2>
+            <div>
+                <div id="social" class="p-3">
+                    <p><i class="bi bi-telephone-fill"> (00) 0000-0000</i></p>
+                    <p><i class="bi bi-whatsapp"> (00) 0 0000-0000</i></p>
+                    <p><i class="bi bi-envelope"> contato@mundoseaventuras.com</i></p>
+                    <p><i class="bi bi-instagram"> @mundoseaventuras</i></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="rodape" class="container-fluid bg-info p-3 text-white">
+        <p><i class="bi bi-c-circle"></i> 2024</p>
+        <a href="https://www.flaticon.com/br/icones-gratis/verao" title="verão ícones">Flaticon</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
